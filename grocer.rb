@@ -14,7 +14,6 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   full_cart = []
-  
   i = 0
   while i < cart.length
   full_cart[i] = cart[i]
@@ -25,7 +24,6 @@ def consolidate_cart(cart)
     end
     i += 1
   end
-  puts cart
   return full_cart
 end
 
