@@ -16,7 +16,7 @@ def consolidate_cart(cart)
   full_cart = []
   i = 0
   while i < cart.length
-   if full_cart[i][:count] != nil
+   if full_cart[i] != nil
    full_cart[i][:count] += 1
   else
     full_cart[i].push(cart[i])
