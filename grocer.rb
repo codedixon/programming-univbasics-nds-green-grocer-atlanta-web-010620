@@ -9,8 +9,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
- 
-  full_cart = []
+ full_cart = []
   i = 0
   while i < cart.length
   full_cart_item = find_item_by_name_in_collection(cart[i][:item], full_cart)
