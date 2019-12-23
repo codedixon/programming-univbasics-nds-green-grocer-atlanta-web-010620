@@ -29,13 +29,11 @@ end
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
-  count_array = consolidate_cart(cart)
   i = 0
   while i < cart.length
   j = 0
-  item_name = find_item_by_name_in_collection(cart[i][:item], cart)
   while j < coupons.length
-  if coupons[j][item_name] && cart[i][:count] >= coupons[j][:num]
+  if cart[i][:item] == coupons[j][:item] && cart[i][:count] >= coupons[j][:num]
     cart << {:item => "#{item_name} W/COUPON", 
     :price => coupons[j][:cost] / coupons[j][:num], 
     :clearance => cart[i][:clearance],
