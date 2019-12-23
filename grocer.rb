@@ -48,6 +48,7 @@ i += 1
 end
   # REMEMBER: This method **should** update cart
   puts cart
+  puts coupons
   return cart
 end
 
