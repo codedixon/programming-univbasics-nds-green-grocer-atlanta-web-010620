@@ -30,27 +30,8 @@ end
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   coupons_hash = {}
-  #count_hash = consolidate_cart(cart)
-  while i < cart.length
-  j = 0
-  while j < coupons.length
-  if cart[i][:item] = coupons[j][item] && cart[i][:count] <= coupons[j][:num]
-  j += 1
-  while j < coupons.length
-  coupons_hash[coupons[j][:item]] = coupons[j][:num]
-  j += 1
-end
-#k = 0
- #while k < cart.length
-  #count_hash[cart[k][:item]] = cart[k][:count]
-  #k += 1
-#end
-  #puts count_hash
-  i = 0
-  #while i < cart.length
-  #if cart[i][:count] < cart[i][:num]
-  #i += 1
-#end
+  count_hash = consolidate_cart(cart)
+  puts count_hash
   # REMEMBER: This method **should** update cart
   
   return cart
