@@ -24,6 +24,8 @@ def consolidate_cart(cart)
   }
   full_cart << full_cart_item
 end
+i += 1
+end
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
