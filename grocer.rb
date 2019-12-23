@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   if full_cart[i][:count]
    full_cart[i][:count] += cart[i][:count]
   else 
-   full_cart[i][:count] = cart[i][:count]
+   full_cart[i][:count] = 1
     end
     i += 1
   end
