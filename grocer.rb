@@ -22,6 +22,7 @@ def consolidate_cart(cart)
     :clearance => cart[i][:clearance]
     :count => 1
   }
+  full_cart << full_cart_item
 end
 
 def apply_coupons(cart, coupons)
