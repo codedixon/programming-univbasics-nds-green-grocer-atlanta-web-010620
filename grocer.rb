@@ -15,6 +15,7 @@ def consolidate_cart(cart)
   while i < cart.length
   full_cart_item = find_item_by_name_in_collection(cart[i][:item], full_cart)
   if full_cart_item != nil
+    full_cart_item +=
 end
 
 def apply_coupons(cart, coupons)
