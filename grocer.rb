@@ -36,7 +36,7 @@ def apply_coupons(cart, coupons)
   while j < coupons.length
   if coupons[j][item_name] && cart[i][:count] >= coupons[j][:num]
     cart << {:item => item_name, 
-    :price => cart[i][:price], 
+    :price => coupons[j][:cost] / coupons[j][:num], 
     :clearance => cart[i][:clearance],
     :count => cart[i][:count] - coupons[j][:num]
     }
@@ -46,7 +46,7 @@ end
 i += 1
 end
   # REMEMBER: This method **should** update cart
-  
+  puts cart
   return cart
 end
 
