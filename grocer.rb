@@ -66,7 +66,7 @@ def checkout(cart, coupons)
  total = 0
  i = 0
  while i < new_cart.length
- total += new_cart[i][:price] * new_cart[i][:count]
+ total += (new_cart[i][:price] * new_cart[i][:count])
  i += 1
  end
   # This method should call
