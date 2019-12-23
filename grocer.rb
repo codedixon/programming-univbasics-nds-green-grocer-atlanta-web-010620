@@ -29,9 +29,13 @@ end
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
-  coupons_hash = []
-  count_hash = consolidate_cart(cart)
-  puts count_hash[0]
+  count_array = consolidate_cart(cart)
+  while i < cart.length
+  j = 0
+  item_name = find_item_by_name_in_collection(cart[i][:item], cart)
+  while j < coupons.length
+  if coupons[j][item_name] && cart[i][:count] >= coupons[j][:num]
+    cart
   # REMEMBER: This method **should** update cart
   
   return cart
