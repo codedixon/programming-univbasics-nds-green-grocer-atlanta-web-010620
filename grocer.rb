@@ -15,7 +15,8 @@ def consolidate_cart(cart)
   full_cart_item = find_item_by_name_in_collection(cart[i][:item], full_cart)
   if full_cart_item != nil
     full_cart_item[:count] += 1
-  else full_cart_item = {
+  else 
+    full_cart_item = {
     :item => cart[i][:item],
     :price => cart[i][:price],
     :clearance => cart[i][:clearance],
