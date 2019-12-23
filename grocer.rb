@@ -24,6 +24,7 @@ def consolidate_cart(cart)
   end
   i += 1
 end
+puts full_cart
   return full_cart
 end
 
