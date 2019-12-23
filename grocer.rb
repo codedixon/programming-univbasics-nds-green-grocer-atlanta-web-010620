@@ -71,5 +71,5 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   puts new_cart
-  return new_cart
+  return new_cart[:price]
 end
