@@ -69,13 +69,8 @@ def checkout(cart, coupons)
  total += (new_cart[i][:price] * new_cart[i][:count]).round(2)
  i += 1
  end
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
-  puts cart
+ 
+ if total > 100
+   total *= 0.9
   return total
 end
