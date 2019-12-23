@@ -38,7 +38,13 @@ def apply_coupons(cart, coupons)
     cart << {:item => item_name, 
     :price => cart[i][:price], 
     :clearance => cart[i][:clearance],
-    :count => cart[i][:count] = coupons[j][:num]
+    :count => cart[i][:count] - coupons[j][:num]
+    }
+  end
+  j += 1
+end
+i += 1
+end
   # REMEMBER: This method **should** update cart
   
   return cart
