@@ -29,7 +29,7 @@ end
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
-  coupons_hash = {}
+  coupons_hash = []
   count_hash = consolidate_cart(cart)
   puts count_hash[0]
   # REMEMBER: This method **should** update cart
