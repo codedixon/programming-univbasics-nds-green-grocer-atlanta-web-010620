@@ -30,6 +30,7 @@ end
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   count_array = consolidate_cart(cart)
+  i = 0
   while i < cart.length
   j = 0
   item_name = find_item_by_name_in_collection(cart[i][:item], cart)
