@@ -16,14 +16,13 @@ def consolidate_cart(cart)
   full_cart = []
   i = 0
   while i < cart.length
-   if full_cart[i] != nil
-   full_cart[i][:count] += 1
-  else
-    full_cart[i].push(cart[i])
-    full_cart[i][:count] = 1
-  end
-  i += 1
-end
+   full_cart.push(cart[i])
+   full_cart[i][:count] = 1
+   if full_cart[i][:count] = 1
+     full_cart[i][:count] += 1
+   end
+   i += 1
+ end
 puts full_cart
   return full_cart
 end
