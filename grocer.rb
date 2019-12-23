@@ -63,7 +63,7 @@ def checkout(cart, coupons)
  new_cart = consolidate_cart(cart)
  middle_cart = apply_coupons(new_cart, coupons)
  last_cart = apply_clearance(middle_cart)
- 
+ puts last_cart
  total = 0
  i = 0
  while i < last_cart.length
